@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.ball {
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    margin: 0 10px;
+    animation: 2s loading ease infinite;
+}
+
+.ball:nth-child(1) {
+    background:#4285F5;
+    animation-delay: 25s;
+}
+.ball:nth-child(2) {
+    background: tomato;
+}
+.ball:nth-child(3) {
+    background: #FBBD06;
+    animation-delay: 5s;
+}
+.ball:nth-child(4) {
+    background: #34A952;
+}
+
+@keyframes loading{
+    50%{
+        transform: translateY(25px);
+    }
+}
+
+footer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: tomato;
+    translate: no;
+}
+
+footer a:hover{
+    color: #34A952;
+}
